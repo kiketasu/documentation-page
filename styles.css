@@ -1,4 +1,5 @@
 html, body {
+    scroll-behavior: smooth;
     background-image: url("https://images.uesp.net/7/77/UESP-Parchment_Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@ html, body {
     border-right: solid;
     min-width: 300px;
     width: 300px;
-    height: auto;
+    height: 100%;
     border-color: rgba(0, 22, 22, 0.4);
 }
 #navbar header {
@@ -43,6 +44,16 @@ html, body {
     width: 100%;
     }
 
+    #main-doc {
+        padding: 20px;
+        height: auto;
+        border-color: rgba(0, 22, 22, 0.4);
+    }
+    
+    header {
+        font-size: 30px;
+    }
+
 @media only screen and (max-width: 600px) {
     body {
       display: flex;
@@ -51,16 +62,18 @@ html, body {
     #navbar {
       width: 100%;
       border-right: none;
+
     }
+    #index {
+      display: none;
+    }
+    #last-li{
+        border-bottom: 1px solid;
+    }
+    #main-doc {
+        padding-right: 10px;
+    }
+
   }
 
-#main-doc {
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    border-color: rgba(0, 22, 22, 0.4);
-}
 
-header {
-    font-size: 30px;
-}

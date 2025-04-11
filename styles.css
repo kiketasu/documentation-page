@@ -62,14 +62,22 @@ html, body {
     body {
       display: flex;
       flex-direction: column;
+      margin-top:200px ;
     }
+
     #navbar {
       width: 100%;
-      height: auto;
+      height: 240px;
       border-right: none;
-      background-color: rgb(255, 255, 255);
+      background-image: url("https://images.uesp.net/7/77/UESP-Parchment_Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: -16px;
 
     }
+
     #index {
       display: none;
     }
